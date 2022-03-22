@@ -1,7 +1,7 @@
 import React from 'react';
-import {View,Image,Text,TouchableOpacity,StyleSheet} from 'react-native';
+import { View,Image,Text,TouchableOpacity,StyleSheet } from 'react-native';
 import { Ionicons} from '@expo/vector-icons';
-
+import Botao from '../botao';
 
 export default function Cabecalho(){
 return(
