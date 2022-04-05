@@ -9,7 +9,7 @@ import GAMES from './data/gamesData'
 
 function App() {
   return (
-    <View style={{backgroundColor:'#D3D3D3', flex:1}}>
+    <View style={{backgroundColor:'#D3D3D3', flex:1 }}>
       <Cabecalho/>
       <Botao texto={'Apps'} cor={'#689f38'} logo={'apps-outline'} texto2={'Games'} logo2={'game-controller-outline'} cor2={'#107C10'}/>
       <Botao texto={'Movies'} cor={'#ed3b3b'} logo={'videocam-outline'} texto2={'Livros'} logo2={'book-outline'} cor2={'#039be5'}/>

@@ -29,6 +29,18 @@ const GAMES = [
     value: 18.00,
     image: 'dbz.jpg'
   },
+  {
+    id: '06',
+    name: 'GTA San Andreas',
+    value: 15.00,
+    image: 'gta.png'
+  },
+  {
+    id: '07',
+    name: 'GTA V',
+    value: 200.00,
+    image: 'gtav.png'
+  }
 ]
 
 export default GAMES
