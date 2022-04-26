@@ -14,10 +14,12 @@ const App = () => {
     <View style={{backgroundColor:'#D3D3D3', flex:1 }}>
       <Cabecalho/>
       <Botao texto={'Apps'} cor={'#689f38'} logo={'apps-outline'} texto2={'Games'} logo2={'game-controller-outline'} cor2={'#107C10'}/>
-      <Botao texto={'Movies'} cor={'#ed3b3b'} logo={'videocam-outline'} texto2={'Livros'} logo2={'book-outline'} cor2={'#039be5'}/>
+      <Botao texto={'Movies'} cor={'#ed3b3b'} logo={'videocam-outline'} texto2={'Books'} logo2={'book-outline'} cor2={'#039be5'}/>
       <View>
         <Text style={style.title}>Games</Text>
         <FlatList 
+          style={style.flast}
+          showsHorizontalScrollIndicator={false}
           horizontal={true}
           data={GAMES}
           keyExtractor = {item => item.id}
@@ -33,6 +35,7 @@ const App = () => {
       <View style={{marginTop: 20}}>
         <Text style={style.title}>Apps</Text>
         <FlatList 
+          showsHorizontalScrollIndicator={false}
           horizontal={true}
           data={APPS}
           keyExtractor = {item => item.id}
@@ -45,7 +48,7 @@ const App = () => {
           )}
         />
       </View>
-      <Destaque imagem={'apexm-banner.jpg'} titulo="Apex Legends" price={0} rating={3}/>
+      <Destaque imagem={'ghost.jpg'} titulo="Ghost of Tsushima" price={0} rating={5}/>
     </View>
   )
 }
@@ -56,6 +59,10 @@ const style = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 10,
     color: '#3d3d3d'
+  },
+  flast: {
+    minWidth:400,
+    maxWidth:'100%'
   }
 })
 

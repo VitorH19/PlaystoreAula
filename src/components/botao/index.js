@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 import { Ionicons} from '@expo/vector-icons'
 
-// eslint-disable-next-line react/prop-types
 const Botao = ({ logo, texto, cor, logo2, texto2, cor2 }) => {
   return (
     <View style={styles.containerBotoes1}>

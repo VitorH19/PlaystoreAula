@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import { AirbnbRating } from 'react-native-ratings'
-import { ScrollView } from 'react-native-web'
+import { ScrollView, ScrowBar } from 'react-native-web'
 
 const Destaque = ({ imagem, titulo, price, rating }) => {
 
@@ -9,13 +9,14 @@ const Destaque = ({ imagem, titulo, price, rating }) => {
   return (
     <ScrollView style={style.container}>
       <Image source={require(`../../../imagens/${imagem}`)} style={style.imagem}></Image>
+
       <View style={style.info}>
         <View style={style.textInfo} >
           <Text style={style.titulo}>{titulo}</Text>
           <Text style={style.price}>{price ? '$' + price : 'free'}</Text>
         </View>
         <View style={style.stars}>
-          <AirbnbRating 
+          <AirbnbRating
             isDisabled={true}
             ratingCount={5}
             defaultRating={rating}
@@ -36,7 +37,8 @@ const Destaque = ({ imagem, titulo, price, rating }) => {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
+    alignSelf:'center',
+    flexDirection:'row',
     marginTop: 20,
     padding: 10,
     backgroundColor: 'white'
@@ -48,13 +50,14 @@ const style = StyleSheet.create({
     width: '100%'
   },
   imagem: {
-    width: 400,
+    width: '100%',
     height: 225,
     borderRadius: 10
   },
   titulo: {
     fontSize: 20,
     fontWeight: 500,
+    marginRight:20,
   },
   price: {
     color: 'green',

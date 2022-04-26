@@ -20,7 +20,7 @@ const APPS = [
   {
     id: '04',
     name: 'Twitter',
-    value: 'Sua Alma e dignidade',
+    value: 0,
     image: 'tt.png'
   }
 ]
